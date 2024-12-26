@@ -1,33 +1,57 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
+// import Navbar from './components/Navbar/Navbar'
+import Layout from './components/Layout/Layout'
+import Home from './components/Home/Home'
+import Search from './components/Search/Search'
+import Explore from './components/Explore/Explore'
+import Notifications from './components/Notifications/Notifications'
+import Messages from './components/Messages/Messages'
+import Profile from './components/Profile/Profile'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+
+  const router = createBrowserRouter([
+    {
+      path: "/", 
+      element: <Layout isChecked={isChecked} setIsChecked={setIsChecked} />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/search",
+          element: <Search />,
+        },
+        {
+          path: "/explore",
+          element: <Explore />,
+        },
+        {
+          path: "/notifications",
+          element: <Notifications />,
+        },
+        {
+          path: "/messages",
+          element: <Messages />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
+        },
+      ],
+    },
+  ]);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className={isChecked ? "AppDark" : "App"}>
+        {/* <Navbar isChecked={isChecked} setIsChecked={setIsChecked} /> */}
+        <RouterProvider router={router} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
