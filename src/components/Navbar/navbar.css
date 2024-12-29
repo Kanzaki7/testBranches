@@ -1,0 +1,433 @@
+.navbar {
+    width: 220px;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+.navbarDark {
+    width: 220px;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+    background-color: rgb(16, 16, 16);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(84, 84, 84, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+
+.divLogo {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+    /* margin-left: 60px; */
+    margin-bottom: 20px;
+}
+
+.divLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 4px;
+    /* margin-left: 60px; */
+    /* border: 2px solid black; */
+}
+.divBurgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* margin-left: 60px; */
+    /* border: 2px solid black; */
+    width: 136px;
+    margin-top: 65px;
+    margin-bottom: 17px;
+}
+
+.divLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+.divLinkCreate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 126px;
+    border: 3px solid #E0295D;
+    border-radius: 55px;
+    height: 40px;
+}
+.divLinkCreateBis{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.divLinkCreate:hover {
+    background-color: #E0295D;
+}
+
+.imgLink {
+    width: 24px;
+    height: 24px;
+    /* border: 2px solid black; */
+}
+.imgLinkCreate {
+    /* display: none; */
+    width: 33px;
+    height: 33px;
+    /* border: 2px solid black; */
+}
+.divLink:hover .imgLink {
+    display: none;
+}
+.imgLinkHover {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.divLink:hover .imgLinkHover {
+    display: block;
+}
+
+.linkTextWhite {
+    color: white;
+}
+.linkTextBlack {
+    color: black;
+}
+
+.textLink {
+    font-size: 16px;
+}
+.textLinkCreate {
+    font-size: 16px;
+    font-weight: bold;
+    color: #E0295D;
+}
+.divLinkCreate:hover .textLinkCreate {
+    color: #ffffff;
+}
+.divLink:hover .textLink {
+    color: #E0295D;
+}
+.textLinkMode {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+}
+.divLink:hover .textLinkMode {
+    color: #E0295D;
+}
+
+.moreWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -220px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom:  1px;
+    background-color: rgb(246, 246, 246);
+    animation: showMore 0.2s ease-in-out;
+}
+.moreWindowDark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -220px;
+    z-index: 1;
+    box-shadow: rgba(84, 84, 84, 0.24) 0px 3px 8px;
+    padding-bottom:  1px;
+    background-color: rgb(16, 16, 16);
+    animation: showMore 0.2s ease-in-out;
+}
+.moreWindowShow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom:  1px;
+    background-color: rgb(255, 255, 255);
+    animation: showMoreWindow 0.2s ease-in-out;
+}
+.moreWindowShowDark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    box-shadow: rgba(84, 84, 84, 0.24) 0px 3px 8px;
+    padding-bottom:  1px;
+    background-color: rgb(16, 16, 16);
+    animation: showMoreWindow 0.2s ease-in-out;
+}
+
+.divBurgerMenuMore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* margin-left: 60px; */
+    /* border: 2px solid black; */
+    width: 166px;
+}
+
+
+@keyframes showMoreWindow {
+    0% {
+        left: -220px;
+    }
+    100% {
+        left: 0px;
+    }
+    
+}
+@keyframes showMore {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -220px;
+    }
+    
+}
+
+.divLinksMore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* margin-left: 60px; */
+    /* border: 2px solid black; */
+    margin-top: 452px;
+    margin-bottom: 30px;
+    width: 166px;
+    gap: 5px;
+}
+
+.divLinkMore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 16px; */
+    cursor: pointer;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.divLinkSunny {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    width: 166px;
+    /* border: 2px solid black; */
+}
+
+.imgLinkMore {
+    width: 24px;
+    height: 24px;
+}
+.divLinkMore:hover .imgLinkMore {
+    display: none;
+}
+.divLinkSunny:hover .imgLink {
+    display: none;
+}
+.imgLinkHoverMore {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.divLinkMore:hover .imgLinkHoverMore {
+    display: block;
+}
+.divLinkMore:hover .textLinkMode {
+    color: #E0295D;
+}
+.divLinkSunny:hover .imgLinkHover {
+    display: block;
+}
+.divLinkSunny:hover .textLink {
+    color: #E0295D;
+}
+
+
+.switch {
+    position: relative;
+    height: 1.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9999px;
+    background-color: rgba(100, 116, 139, 0.377);
+    transition: all .3s ease;
+}
+
+.switch:checked {
+    background-color: #E02A5D;
+}
+
+.switch::before {
+    position: absolute;
+    content: "";
+    left: calc(1.5rem - 1.6rem);
+    top: calc(1.5rem - 1.6rem);
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    border: 1px solid rgba(100, 116, 139, 0.527);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+    transition: all .3s ease;
+}
+
+.switch:hover::before {
+    box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+}
+
+.switch:checked:hover::before {
+    box-shadow: 0 0 0px 8px rgba(216, 188, 188, 0.353)
+}
+
+.switch:checked:before {
+    transform: translateX(100%);
+    border-color: #E02A5D;
+}
+
+
+
+
+
+/* responsiveness  */
+
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        width: 55px;
+    }
+    .navbarDark {
+        width: 55px;
+    }
+
+    .divLinks {
+        align-items: center;
+    }
+
+    .divLink {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        /* border: 2px solid black; */
+    }
+    .divLinkCreate {
+        display: none;
+    }
+
+    .divLinkCreateBis {
+        display: flex;
+    }
+
+    .divBurgerMenu {
+        width: auto;
+    }
+    .divBurgerMenuMore {
+        width: auto;
+    }
+    .divLinksMore {
+        width: 60px;
+        align-items: center;
+        gap: 25px;
+    }
+    .divLinkSunny {
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    .textLink {
+        display: none;
+    }
+    .textLinkMode {
+        display: none;
+    }
+    .imgLinkMore {
+        display: none;
+    }
+    .divLinkMore:hover .imgLinkHoverMore {
+        display: none;
+    }
+
+    .switch {
+        width: 2.4rem;
+    }
+    .switch::before {
+        left: calc(1.5rem - 1.9rem);
+        top: calc(1.5rem - 1.5rem);
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+
+
+    .moreWindow {
+        left: -55px;
+    }
+    .moreWindowDark {
+        left: -55px;
+    }
+
+    @keyframes showMoreWindow {
+        0% {
+            left: -55px;
+        }
+        100% {
+            left: 0px;
+        }
+        
+    }
+    @keyframes showMore {
+        0% {
+            left: 0px;
+        }
+        100% {
+            left: -55px;
+        }
+        
+    }
+}
