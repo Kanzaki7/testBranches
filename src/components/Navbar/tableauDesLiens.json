@@ -1,0 +1,50 @@
+[
+    {
+        "link": "Home",
+        "href": "/",
+        "iconName": "home",
+        "iconLink": "/assets/images/home.png",
+        "iconWhiteLink": "/assets/images/homeWhite.png",
+        "iconRoseLink": "/assets/images/homeRose.png"
+    },
+    {
+        "link": "Search",
+        "href": "/search",
+        "iconName": "loupe",
+        "iconLink": "/assets/images/loupe.png",
+        "iconWhiteLink": "/assets/images/loupeWhite.png",
+        "iconRoseLink": "/assets/images/loupeRose.png"
+    },
+    {
+        "link": "Explore",
+        "href": "/explore",
+        "iconName": "compass",
+        "iconLink": "/assets/images/compass.png",
+        "iconWhiteLink": "/assets/images/compassWhite.png",
+        "iconRoseLink": "/assets/images/compassRose.png"
+    },
+    {
+        "link": "Notifications",
+        "href": "/notifications",
+        "iconName": "notification",
+        "iconLink": "/assets/images/notification.png",
+        "iconWhiteLink": "/assets/images/notificationWhite.png",
+        "iconRoseLink": "/assets/images/notificationRose.png"
+    },
+    {
+        "link": "Messages",
+        "href": "/messages",
+        "iconName": "email",
+        "iconLink": "/assets/images/email.png",
+        "iconWhiteLink": "/assets/images/emailWhite.png",
+        "iconRoseLink": "/assets/images/emailRose.png"
+    },
+    {
+        "link": "Profile",
+        "href": "/profile",
+        "iconName": "user",
+        "iconLink": "/assets/images/user.png",
+        "iconWhiteLink": "/assets/images/userWhite.png",
+        "iconRoseLink": "/assets/images/userRose.png"
+    }
+]
